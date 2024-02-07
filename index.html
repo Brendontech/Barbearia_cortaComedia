@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+
+</head>
+
+<body>
+    <section id="logo">
+        <div class="imagem1">
+            <a href="index.html">
+                <img src="src/imagem/kisspng-barbers-pole-barbershop-hairdresser-color-vector-rotating-column-5a8c9e7418b080.9874189015191650441011-removebg-preview.png"
+                    alt="">
+            </a>
+        </div>
+        <div class="logo-imagem">
+            <img src="src/imagem/Black Gold Retro Barbershop Logo.png" alt="">
+        </div>
+        <div class="imagem1">
+            <img src="src/imagem/kisspng-barbers-pole-barbershop-hairdresser-color-vector-rotating-column-5a8c9e7418b080.9874189015191650441011-removebg-preview.png"
+                alt="">
+        </div>
+
+
+    </section>
+    <section id="opcoes">
+        <nav class="escolhas">
+            <div class="nav-bar" id="textoCortes">
+                <ul>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Corte" onclick="reiniciarAnimacao()">Cortes</a></li>
+                    <li><a href="#Localização">Localização</a></li>
+                    <li><a href="#Contatos">Contatos</a></li>
+                    <button class="entrar"><a href="#">ENTRAR</a></button>
+                </ul>
+                <hr>
+            </div>
+        </nav>
+    </section>
+
+    <section id="Sobre">
+        <div class="informação1">
+            <h1>
+                Na Corta Comédia, não apenas cortamos cabelos, esculpimos visuais únicos. Somos uma equipe apaixonada de
+                profissionais dedicados a proporcionar uma experiência de barbearia excepcional no coração de Brasília,
+                Recanto das Emas.
+            </h1>
+        </div>
+        <div class="imagem-info">
+            <img src="src/imagem/fotos-de-homens-na-barbearia-Imagem-png-para-baixar-gratis-removebg-preview.png">
+        </div>
+        <div class="informação2">
+            <h1>
+                Nosso compromisso vai além do corte perfeito; é sobre criar uma atmosfera acolhedora, onde cada cliente
+                se
+                sinta valorizado. Com anos de exp
+                eriência e técnicas inovadoras, estamos prontos para realçar a sua
+                autenticidade, transformando cada visita em um momento memorável.
+            </h1>
+
+        </div>
+    </section>
+    <section id="Corte" class="grid2">
+        <div class="grid1 corteAltura">
+            <div class="texto-corte">
+                <h1>Explore a excelência na arte do corte em nossa seção exclusiva. Na Corta Comédia, transformamos cada
+                    fio
+                    em uma declaração de estilo autêntico. Descubra o poder do corte perfeito conosco</h1>
+            </div>
+
+            <div class="imagem-corte">
+                <img
+                    src="src/imagem/imgbin-business-company-management-lithium-networks-llc-business-9tgrhsDX1pjJK2x8AAzD1SWhM-removebg-preview.png">
+                <img src="src/imagem/imgbin-bligg-moon-stars-manhattan-musician-festive-days-t6133tyZt2tfLzekDeYt2dQ0x-removebg-preview (1).png"
+                    alt="">
+            </div>
+
+
+            <div id="Precos">
+                <h2>Cortes de Cabelo</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Estilo</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Corte Mão Amiga</td>
+                            <td>Um corte feito com carinho e amizade</td>
+                            <td>R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>Corte Cheiro no Cangote</td>
+                            <td>Um corte suave e delicado, como um sussurro no cangote</td>
+                            <td>R$ 60,00</td>
+                        </tr>
+                        <tr>
+                            <td>Corte Abraço de Urso</td>
+                            <td>Um corte tão aconchegante que é como um abraço de urso</td>
+                            <td>R$ 70,00</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="agendamentos" class="grid2">
+        <div class="grid1">
+
+            <h2>Agendamento de Corte</h2>
+
+            <form id="agendamentoForm">
+                <label for="corte">Escolha o Corte:</label>
+                <select id="corte" name="corte">
+                    <option value="corteClassico">Corte Clássico</option>
+                    <option value="corteModerno">Corte Moderno</option>
+                    <option value="corteEstilizado">Corte Estilizado</option>
+                    <!-- Adicione mais cortes conforme necessário -->
+                </select>
+
+                <label for="data">Escolha a Data:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="horario">Escolha o Horário:</label>
+                <input type="time" id="horario" name="horario" required>
+
+                <!-- Adicionei a classe "meuBotao" ao botão -->
+                <button type="button" class="meuBotao" onclick="agendarCorte()">Agendar</button>
+            </form>
+
+            <div id="calendario">
+                <!-- O calendário será exibido aqui -->
+            </div>
+
+            <!-- Adicionei a classe "minhaTabela" à tabela existente -->
+            <table class="minhaTabela">
+                <!-- Conteúdo da tabela existente -->
+            </table>
+
+            <!-- Elemento para exibir alerta -->
+            <div id="customAlert" class="alert-container">
+                <div class="alert-content">
+                    <span id="alertMessage"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Localização" class="grid2">
+        <div class="grid1">
+            <div id="mapa" style="height: 50vh; width: 50%;"></div>
+            <h2>Venha nos conhecer! Aqui, você estaciona carros, carrças, cavalos... até sua criatividade! Estamos
+                prontos
+                para dar um toque de humor ao seu visual na Corta Comédia. Estacione e transforme-se</h2>
+        </div>
+    </section>
+    <section class="contatos grid2">
+        <div class="grid1 blocos">
+            <div class="icons-contact">
+                <a>
+                    <img src="src/imagem/whatss.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="icons-contact">
+                <a>
+                    <img src="src/imagem/insta.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="icons-contact">
+                <a>
+                    <img src="src/imagem/face.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="icons-contact">
+                <a>
+                    <img src="src/imagem/Loc.png" alt="Localização">
+                </a>
+            </div>
+            <div class="numero">
+                <h2>Contato: <br> (61) 981864105 </h2>
+            </div>
+        </section>
+        <div class="text-contato">
+            <h3>Estamos aqui para atender você! Entre em contato conosco para agendar seu próximo corte, esclarecer
+                dúvidas ou simplesmente para um papo descontraído sobre estilo. Estamos ansiosos para ouvir de você
+                na Corta Comédia</h3>
+            </div>
+        </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

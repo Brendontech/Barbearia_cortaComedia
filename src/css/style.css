@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #04161A;
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+}
+.imagem1 {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem1 img {
+    background-size: cover;
+    display: flex;
+    width: 15rem;
+}
+#logo {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    height: 70vh;
+
+}
+
+.logo-imagem {
+    cursor: pointer;
+}
+
+.logo-imagem img {
+    width: 30rem;
+    object-fit: cover;
+}
+.nav-bar {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #D9ECF2;
+    font-size: 1.2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #D9ECF2;
+    animation: typing 3s steps(40) 1s forwards;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-bar:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 1em;
+    background-color: #D9ECF2;
+    animation: blink 1s infinite alternate;
+}
+
+
+
+hr {
+    margin-bottom: 3vh;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+button {
+    height: 5vh;
+    align-items: center;
+    padding: 0;
+    width: 25vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+
+button a {
+    color: black;
+}
+
+button:hover {
+    background-color: #5D6E1E;
+    border: solid 1px black;
+    transition: ease-in 1000ms;
+}
+
+#opcoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    height: 50vh;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #D9ECF2;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+a:hover {
+    color: black;
+    transition: linear 1000ms;
+
+}
+
+li {
+    display: inline-block;
+    padding: 5vh;
+    cursor: pointer;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#Sobre {
+    display: flex;
+    align-items: center;
+    color: #D9ECF2;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.informação1 {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.informação1 h1 {
+    width: 50%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.informação2 h1 {
+    width: 50%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    float: right;
+}
+.corteAltura {
+    height: 100%;
+}
+.imagem-corte {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.imagem-corte img {
+    margin-top: 5vh;
+    border-radius: 50%;
+    width: 70vh;
+    padding: 10vh;
+    object-fit: cover;
+}
+
+.grid2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.grid1 {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.texto-corte h1 {
+    font-size: 1.3rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #D9ECF2;
+    height: 30vh;
+    display: flex;
+    align-items: end;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+h2{
+    color: #D9ECF2;
+    font-family: 'Oswald', sans-serif;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Adicione novos estilos para o alerta */
+.alert-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s;
+}
+
+.alert-content {
+    text-align: center;
+}
+
+/* Estilo específico para a classe "meuBotao" */
+.meuBotao {
+    background-color: #2c7c2f;
+    color: white;
+    display: flex;
+    padding: 26px;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.meuBotao:hover {
+    background-color: #45a049;
+}
+
+/* Estilo específico para a classe "minhaTabela" */
+.minhaTabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.minhaTabela th, .minhaTabela td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.minhaTabela th {
+    background-color: #f2f2f2;
+}
+
+.minhaTabela tr:hover {
+    background-color: #f5f5f5;
+}
+#Localização {
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#Localização h2{
+    padding: 8vh;
+    font-size: 1.4rem;
+}
+#mapa {
+    width: 100%;
+    height: 400px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+.contatos {
+    height: 30vh;
+    background-color: #2c7c2f;
+    box-shadow: 0 4px 8px rgba(8, 1, 0, 0.5);
+}
+
+.icons-contact img {
+    height: 15vh;
+    object-fit: cover;
+}
+
+.icons-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatos {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.blocos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr );
+}
+
+.icons-contact a{
+    display: flex;
+}
+.text-contato h3{
+    height: 15vh;
+    width: auto;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #D9ECF2;
+    font-size: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+.numero{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:800px) {
+    .imagem1 img {
+        width: 6rem;
+        height: 8rem;
+    }
+    #logo{
+        height: 50vh;
+    }
+    .logo-imagem img {
+        width: 15rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        display: flex;
+        padding: 4vh;
+        justify-content: center;
+    }
+    .nav-bar {
+        white-space: normal;
+        border-right: none;
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-bar:after {
+        display: none;
+    }
+
+    hr {
+        margin-bottom: 1.5vh;
+    }
+
+    #opcoes button {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .entrar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; 
+        
+    }
+
+    .escolhas ul {
+        margin: 0; /* Remove a margem padrão da lista */
+        display: flex;
+        flex-direction: column;
+        padding: 0; /* Remove o preenchimento padrão da lista */
+    }
+    .imagem-info img{
+        width: 60vh;
+        padding: 5vh;
+    }
+    .informação2, .informação1{
+        font-size: 1rem;
+    }
+    .imagem-corte img{
+        width: 30vh;
+        padding: 4vh;
+    }
+    #mapa {
+        height: 50vh;
+        width: 80%;
+    }
+    .escolhas li {
+        margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+    }
+    #opcoes{
+        height: auto;
+    }
+    .icons-contact img{
+        height: 9vh;
+    }
+    .numero h2{
+        font-size: 1.2rem;
+    }
+}
