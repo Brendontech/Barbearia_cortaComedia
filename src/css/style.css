@@ -469,9 +469,15 @@ select, input {
         height: auto;
     }
     .icons-contact img{
-        height: 9vh;
+        padding: 1vh;
+        height: 8vh;
     }
     .numero h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1vh;
+        width: 25vh;
         font-size: 1.2rem;
     }
 }
