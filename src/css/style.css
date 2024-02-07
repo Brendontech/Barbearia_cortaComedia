@@ -336,12 +336,25 @@ input {
     justify-content: center;
     text-align: center;
 }
-
-#Localização h2 {
+.text-loc {
+    display: flex;
+    flex-direction: column;
+}
+#Localização h3{
+    margin-bottom: 5vh;
     padding: 8vh;
     font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    color: #D9ECF2;
 }
-
+.text-loc h2 {
+    margin-bottom: 4vh;
+    font-size: 2.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #D9ECF2;
+    float: left;
+    display: flex;
+}
 #mapa {
     width: 100%;
     height: 400px;
@@ -470,12 +483,15 @@ input {
         padding: 4vh;
         height: 100vh;
     }
-
+    .text-loc h2 {
+        padding: 4vh;
+        font-size: 1.6rem;
+    }
     #Localização {
         margin-top: 15vh;
     }
 
-    #Localização h2 {
+    #Localização h3 {
         margin-bottom: 10vh;
     }
 
