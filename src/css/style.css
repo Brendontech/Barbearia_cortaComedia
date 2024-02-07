@@ -412,7 +412,7 @@ input {
     }
 
     .logo-imagem img {
-        width: 40vh
+        width: 38vh
     }
 
     li {
@@ -509,7 +509,6 @@ input {
         justify-content: center;
         text-align: center;
         padding: 1vh;
-        width: 15vh;
         font-size: 1.2rem;
     }
     .text-contato h3{
