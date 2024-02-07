@@ -423,7 +423,7 @@ select, input {
         padding: 0; /* Remove o preenchimento padrão da lista */
     }
     .imagem-info img{
-        width: 60vh;
+        width: 50vh;
         padding: 5vh;
     }
     .informação2, .informação1{
