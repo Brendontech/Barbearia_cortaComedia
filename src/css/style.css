@@ -127,7 +127,7 @@ ul {
 }
 
 a:hover {
-    color: black;
+    color: #2c7c2f;
     transition: linear 1000ms;
 
 }
@@ -165,6 +165,15 @@ li {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     float: right;
 }
+#Corte {
+    height: 100%;
+}
+#agendamentos {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
 .corteAltura {
     height: 100%;
 }
@@ -372,6 +381,9 @@ select, input {
 }
 
 @media (max-width:800px) {
+    h2{
+        font-size: 1.4rem;
+    }
     .imagem1 img {
        display: none;
     }
@@ -424,6 +436,13 @@ select, input {
     }
     #agendamentos{
         padding: 4vh;
+        height: 100vh;
+    }
+    #Localização {
+        margin-top: 15vh;
+    }
+    #Localização h2{
+        margin-bottom: 10vh;
     }
     .escolhas ul {
         margin: 0; /* Remove a margem padrão da lista */
