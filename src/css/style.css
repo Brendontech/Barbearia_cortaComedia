@@ -376,10 +376,10 @@ select, input {
        display: none;
     }
     #logo{
-        height: 50vh;
+        height: 45vh;
     }
     .logo-imagem img {
-        width: 25rem;
+        width: 20rem;
     }
 
     li {
@@ -431,12 +431,8 @@ select, input {
         font-size: 1rem;
     }
     .imagem-corte img{
-        width: 30vh;
+        width: 25vh;
         padding: 4vh;
-    }
-    #mapa {
-        height: 50vh;
-        width: 80%;
     }
     .escolhas li {
         margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
