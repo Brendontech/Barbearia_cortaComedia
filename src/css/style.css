@@ -412,7 +412,7 @@ input {
     }
 
     .logo-imagem img {
-        width: 55vh
+        width: 40vh
     }
 
     li {
@@ -437,14 +437,6 @@ input {
     hr {
         margin-bottom: 1.5vh;
     }
-
-    /* 
-    #opcoes button {
-        flex-direction: column;
-        align-items: center;
-display: flex;
-    } */
-
     .entrar {
         display: flex;
         justify-content: center;
@@ -499,7 +491,6 @@ display: flex;
 
     .escolhas li {
         margin-bottom: 10px;
-        
     }
 
     #opcoes {
