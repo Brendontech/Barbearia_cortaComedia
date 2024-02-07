@@ -398,6 +398,20 @@ input {
     align-items: center;
 }
 
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
 @media (max-width:800px) {
     h2 {
         font-size: 1.4rem;
