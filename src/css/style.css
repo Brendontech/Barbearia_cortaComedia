@@ -379,7 +379,7 @@ select, input {
         height: 45vh;
     }
     .logo-imagem img {
-        width: 20rem;
+        width: 19rem;
     }
 
     li {
@@ -416,7 +416,15 @@ select, input {
         margin-bottom: 10px; 
         
     }
-
+    .texto-corte h1{
+        padding: 4vh;
+    }
+    #Corte {
+        padding: 4vh;
+    }
+    #agendamentos{
+        padding: 4vh;
+    }
     .escolhas ul {
         margin: 0; /* Remove a margem padrão da lista */
         display: flex;
@@ -429,10 +437,11 @@ select, input {
     }
     .informação2, .informação1{
         font-size: 1rem;
+        padding: 4vh;
     }
     .imagem-corte img{
         width: 25vh;
-        padding: 4vh;
+        padding: 3vh;
     }
     .escolhas li {
         margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
