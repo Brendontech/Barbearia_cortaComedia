@@ -371,14 +371,13 @@ select, input {
 
 @media (max-width:800px) {
     .imagem1 img {
-        width: 6rem;
-        height: 8rem;
+       display: none;
     }
     #logo{
         height: 50vh;
     }
     .logo-imagem img {
-        width: 15rem;
+        width: 25rem;
     }
 
     li {
