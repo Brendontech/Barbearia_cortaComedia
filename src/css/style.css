@@ -10,6 +10,7 @@ body {
     font-size: 1.3rem;
     font-family: Arial, sans-serif;
 }
+
 .imagem1 {
     display: flex;
     justify-content: center;
@@ -20,6 +21,7 @@ body {
     display: flex;
     width: 15rem;
 }
+
 #logo {
     display: grid;
     text-align: center;
@@ -37,6 +39,7 @@ body {
     width: 30rem;
     object-fit: cover;
 }
+
 .nav-bar {
     overflow: hidden;
     white-space: nowrap;
@@ -165,9 +168,11 @@ li {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     float: right;
 }
+
 #Corte {
     height: 100%;
 }
+
 #agendamentos {
     align-items: center;
     display: flex;
@@ -177,11 +182,12 @@ li {
 .corteAltura {
     height: 100%;
 }
+
 .imagem-corte {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    
+
 }
 
 .imagem-corte img {
@@ -224,9 +230,11 @@ td {
     padding: 12px;
     text-align: left;
 }
-td{
+
+td {
     color: #D9ECF2;
 }
+
 th {
     background-color: #f2f2f2;
 }
@@ -236,7 +244,7 @@ tr:hover {
 }
 
 
-h2{
+h2 {
     color: #D9ECF2;
     font-family: 'Oswald', sans-serif;
 }
@@ -256,7 +264,8 @@ label {
     color: #333;
 }
 
-select, input {
+select,
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -293,6 +302,7 @@ select, input {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .meuBotao:hover {
     background-color: #45a049;
 }
@@ -304,7 +314,8 @@ select, input {
     margin-top: 20px;
 }
 
-.minhaTabela th, .minhaTabela td {
+.minhaTabela th,
+.minhaTabela td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
@@ -317,6 +328,7 @@ select, input {
 .minhaTabela tr:hover {
     background-color: #f5f5f5;
 }
+
 #Localização {
     align-items: center;
     height: 100vh;
@@ -324,15 +336,19 @@ select, input {
     justify-content: center;
     text-align: center;
 }
-#Localização h2{
+
+#Localização h2 {
     padding: 8vh;
     font-size: 1.4rem;
 }
+
 #mapa {
     width: 100%;
-    height: 400px; /* Ajuste conforme necessário */
+    height: 400px;
+    /* Ajuste conforme necessário */
     margin: 0 auto;
 }
+
 .contatos {
     height: 30vh;
     background-color: #2c7c2f;
@@ -358,13 +374,14 @@ select, input {
 .blocos {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(5, 1fr );
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.icons-contact a{
+.icons-contact a {
     display: flex;
 }
-.text-contato h3{
+
+.text-contato h3 {
     height: 15vh;
     width: auto;
     align-items: center;
@@ -373,25 +390,29 @@ select, input {
     justify-content: center;
     color: #D9ECF2;
     font-size: 1rem;
-    font-family: 'Yanone Kaffeesatz', sans-serif; 
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.numero{
+
+.numero {
     display: flex;
     align-items: center;
 }
 
 @media (max-width:800px) {
-    h2{
+    h2 {
         font-size: 1.4rem;
     }
+
     .imagem1 img {
-       display: none;
+        display: none;
     }
-    #logo{
+
+    #logo {
         height: 45vh;
     }
+
     .logo-imagem img {
-        width: 19rem;
+        width: 55vh
     }
 
     li {
@@ -400,6 +421,7 @@ select, input {
         padding: 4vh;
         justify-content: center;
     }
+
     .nav-bar {
         white-space: normal;
         border-right: none;
@@ -416,68 +438,90 @@ select, input {
         margin-bottom: 1.5vh;
     }
 
+    /* 
     #opcoes button {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-    }
+display: flex;
+    } */
 
     .entrar {
         display: flex;
         justify-content: center;
-        margin-bottom: 10px; 
-        
+        margin-bottom: 10px;
+
     }
-    .texto-corte h1{
+
+    .texto-corte h1 {
         padding: 4vh;
     }
+
     #Corte {
         padding: 4vh;
     }
-    #agendamentos{
+
+    #agendamentos {
         padding: 4vh;
         height: 100vh;
     }
+
     #Localização {
         margin-top: 15vh;
     }
-    #Localização h2{
+
+    #Localização h2 {
         margin-bottom: 10vh;
     }
+
     .escolhas ul {
-        margin: 0; /* Remove a margem padrão da lista */
+        margin: 0;
         display: flex;
         flex-direction: column;
-        padding: 0; /* Remove o preenchimento padrão da lista */
+        padding: 0;
+        align-items: center;
     }
-    .imagem-info img{
+
+    .imagem-info img {
         width: 50vh;
         padding: 5vh;
     }
-    .informação2, .informação1{
+
+    .informação2,
+    .informação1 {
         font-size: 1rem;
         padding: 4vh;
     }
-    .imagem-corte img{
+
+    .imagem-corte img {
         width: 25vh;
         padding: 3vh;
     }
+
     .escolhas li {
-        margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+        margin-bottom: 10px;
+        
     }
-    #opcoes{
+
+    #opcoes {
         height: auto;
     }
-    .icons-contact img{
+    .contatos {
+        padding: 4vh;
+    }
+    .icons-contact img {
         padding: 1vh;
         height: 8vh;
     }
-    .numero h2{
+
+    .numero h2 {
         display: flex;
         justify-content: center;
         text-align: center;
         padding: 1vh;
-        width: 25vh;
+        width: 20vh;
         font-size: 1.2rem;
+    }
+    .text-contato h3{
+        padding: 4vh;
     }
 }
